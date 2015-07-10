@@ -1,0 +1,37 @@
+{
+  "name": "js-tdd-bowling",
+  "version": "0.0.0",
+  "description": "A TDD exercise using Jasmine",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djcnet/js-tdd-bowling.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "TDD",
+    "Jasmine"
+  ],
+  "author": "David Clarke",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/djcnet/js-tdd-bowling/issues"
+  },
+  "scripts": {
+    "lint": "npm run lint-src && npm run lint-test",
+    "lint-src": "eslint src",
+    "lint-test": "eslint spec --global describe,it,beforeEach,afterEach --rule no-unused-expressions:false ",
+    "test": "npm run jest"
+  },
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "babel-jest": "*",
+    "jest-cli": "*"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": ["js"],
+    "moduleFileExtensions": ["js", "json"],
+    "testDirectoryName": "spec"
+  }
+}
