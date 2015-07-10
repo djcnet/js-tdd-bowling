@@ -5,7 +5,7 @@ class BowlingGame {
     }
 
     roll(pins) {
-        this.rolls.push(pins);
+
     }
 
     score() {

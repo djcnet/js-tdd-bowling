@@ -10,7 +10,10 @@
   "keywords": [
     "JavaScript",
     "TDD",
-    "Jasmine"
+    "Jasmine",
+    "Jest",
+    "Babel",
+    "ES6"
   ],
   "author": "David Clarke",
   "license": "BSD-2-Clause",
@@ -21,7 +24,7 @@
     "lint": "npm run lint-src && npm run lint-test",
     "lint-src": "eslint src",
     "lint-test": "eslint spec --global describe,it,beforeEach,afterEach --rule no-unused-expressions:false ",
-    "test": "npm run jest"
+    "test": "jest ./spec"
   },
   "devDependencies": {
     "eslint": "^0.17.0",
@@ -31,7 +34,7 @@
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
     "testFileExtensions": ["js"],
-    "moduleFileExtensions": ["js", "json"],
+    "moduleFileExtensions": ["js"],
     "testDirectoryName": "spec"
   }
 }
