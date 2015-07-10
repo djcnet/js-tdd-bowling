@@ -1,5 +1,5 @@
-jest.autoMockOff();
-import BowlingGame from '../src/BowlingGame.js';
+
+var BowlingGame = require('../compiled/BowlingGame.js');
 
 describe("I can calculate a ten pin bowling game", function() {
 

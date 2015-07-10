@@ -21,20 +21,16 @@
     "url": "https://github.com/djcnet/js-tdd-bowling/issues"
   },
   "scripts": {
+    "compile": "./node_modules/.bin/babel src/BowlingGame.js --out-file ./compiled/BowlingGame.js",
     "lint": "npm run lint-src && npm run lint-test",
     "lint-src": "eslint src",
     "lint-test": "eslint spec --global describe,it,beforeEach,afterEach --rule no-unused-expressions:false ",
-    "test": "jest ./spec"
+    "test": "npm run compile && jasmine-node ./spec"
   },
   "devDependencies": {
     "eslint": "^0.17.0",
-    "babel-jest": "*",
-    "jest-cli": "*"
-  },
-  "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": ["js"],
-    "moduleFileExtensions": ["js"],
-    "testDirectoryName": "spec"
+    "babel": "~5.6.14",
+    "jasmine": "~2.3.1",
+    "jasmine-node": "~1.14.5"
   }
 }
