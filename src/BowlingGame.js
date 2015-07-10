@@ -1,11 +1,11 @@
 class BowlingGame {
 
-    contructor() {
+    constructor() {
         this.rolls = [];
     }
 
     roll(pins) {
-
+        
     }
 
     score() {
