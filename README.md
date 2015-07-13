@@ -31,6 +31,7 @@ score should = 23;
 ##Usage
 The npm command is required to run the tests so you will need to install node <https://nodejs.org/download/>
 
+To install;
 ```
 git clone https://github.com/djcnet/js-tdd-bowling.git
 cd ./js-tdd-bowling
@@ -41,3 +42,4 @@ To run the tests;
 ```
 npm test
 ```
+This command will run your code through eslint for syntax checking, transpile it to es5 and run jasmine
