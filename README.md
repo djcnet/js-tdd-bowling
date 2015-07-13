@@ -27,3 +27,17 @@ bowlingGame.roll(2);
 var score = bowlingGame.score();
 ```
 score should = 23;
+
+##Usage
+The npm command is required to run the tests so you will need to install node <https://nodejs.org/download/>
+
+```
+git clone https://github.com/djcnet/js-tdd-bowling.git
+cd ./js-tdd-bowling
+npm install
+```
+
+To run the tests;
+```
+npm test
+```
